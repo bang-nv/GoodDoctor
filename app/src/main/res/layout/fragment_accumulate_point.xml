@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/size_16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/size_12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/size_36dp"
+            android:layout_height="@dimen/size_36dp"
+            android:layout_marginEnd="@dimen/size_16dp"
+            android:src="@drawable/ic_total_coint_36_36" />
+
+        <TextView
+            android:id="@+id/tvTotalPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorF6AE2D"
+            android:textSize="@dimen/text_size_16sp"
+            tools:text="999 điểm" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorE9E4E4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:layout_marginBottom="@dimen/size_5dp"
+        android:text="@string/str_history_accumulate_point"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcHisAccuPoint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

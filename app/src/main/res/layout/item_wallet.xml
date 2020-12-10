@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_bottom"
+    android:padding="@dimen/size_4dp">
+
+    <ImageView
+        android:id="@+id/imgItemWallet"
+        android:layout_width="@dimen/size_25dp"
+        android:layout_height="@dimen/size_25dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/size_8dp"
+        android:background="@drawable/bg_button_circle_primary"
+        android:contentDescription="@null"
+        android:padding="@dimen/size_5dp"
+        android:src="@drawable/ic_cart_vector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_8dp"
+        android:layout_toLeftOf="@id/right"
+        android:layout_toRightOf="@id/imgItemWallet"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTtItemWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Nạp tiền tử Techcombank"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/txtDateTimeWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="18/12/2013 - 14:46"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="@dimen/size_70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/size_8dp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMoneyWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="+200, 000đ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Thành công"
+            android:textColor="@color/color0ABB0A"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+</RelativeLayout>

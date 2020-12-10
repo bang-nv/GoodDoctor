@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/size_8dp"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="@dimen/size_60dp"
+        android:layout_height="@dimen/size_60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:lines="2"
+        android:maxLines="2"
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_10dp"
+        android:textColor="@android:color/black"
+        tools:text="aaaa"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintStart_toEndOf="@id/imgProduct"
+        app:layout_constraintTop_toTopOf="@id/imgProduct" />
+
+    <TextView
+        android:id="@+id/txtPriceDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="450000đ"
+        app:layout_constraintStart_toStartOf="@id/txtName"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/txtPriceDiscount"
+        app:layout_constraintTop_toTopOf="@id/txtPriceDiscount"
+        app:layout_constraintBottom_toBottomOf="@id/txtPriceDiscount"
+        android:text="29000" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#707070"
+        app:layout_constraintBottom_toBottomOf="@id/txtPrice"
+        app:layout_constraintEnd_toEndOf="@id/txtPrice"
+        app:layout_constraintStart_toStartOf="@id/txtPrice"
+        app:layout_constraintTop_toTopOf="@id/txtPrice" />
+
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:text="SL: 0"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="@id/txtPrice"
+        app:layout_constraintStart_toEndOf="@id/txtPriceDiscount"
+        app:layout_constraintTop_toTopOf="@id/txtPrice"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

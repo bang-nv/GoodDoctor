@@ -1,0 +1,291 @@
+<resources>
+  <dimen name="text_size_9sp">
+    15.0sp
+  </dimen>
+  <dimen name="text_size_10sp">
+    16.67sp
+  </dimen>
+  <dimen name="text_size_12sp">
+    20.0sp
+  </dimen>
+  <dimen name="text_size_13sp">
+    21.67sp
+  </dimen>
+  <dimen name="text_size_14sp">
+    23.33sp
+  </dimen>
+  <dimen name="text_size_16sp">
+    26.67sp
+  </dimen>
+  <dimen name="text_size_18sp">
+    30.0sp
+  </dimen>
+  <dimen name="text_size_20sp">
+    33.33sp
+  </dimen>
+  <dimen name="text_size_22sp">
+    36.67sp
+  </dimen>
+  <dimen name="text_size_24sp">
+    40.0sp
+  </dimen>
+  <dimen name="text_size_25sp">
+    41.67sp
+  </dimen>
+  <dimen name="size_189dp">
+    315.0dp
+  </dimen>
+  <dimen name="size_3dp">
+    5.0dp
+  </dimen>
+  <dimen name="size_16dp">
+    26.67dp
+  </dimen>
+  <dimen name="size_10dp">
+    16.67dp
+  </dimen>
+  <dimen name="size_20dp">
+    33.33dp
+  </dimen>
+  <dimen name="size_19dp">
+    31.67dp
+  </dimen>
+  <dimen name="size_106dp">
+    176.67dp
+  </dimen>
+  <dimen name="size_30dp">
+    50.0dp
+  </dimen>
+  <dimen name="size_48dp">
+    80.0dp
+  </dimen>
+  <dimen name="size_15dp">
+    25.0dp
+  </dimen>
+  <dimen name="size_8dp">
+    13.33dp
+  </dimen>
+  <dimen name="size_11dp">
+    18.33dp
+  </dimen>
+  <dimen name="size_12dp">
+    20.0dp
+  </dimen>
+  <dimen name="size_24dp">
+    40.0dp
+  </dimen>
+  <dimen name="size_5dp">
+    8.33dp
+  </dimen>
+  <dimen name="size_50dp">
+    83.33dp
+  </dimen>
+  <dimen name="size_32dp">
+    53.33dp
+  </dimen>
+  <dimen name="size_2dp">
+    3.33dp
+  </dimen>
+  <dimen name="size_40dp">
+    66.67dp
+  </dimen>
+  <dimen name="size_25dp">
+    41.67dp
+  </dimen>
+  <dimen name="size_100dp">
+    166.67dp
+  </dimen>
+  <dimen name="size_147dp">
+    245.0dp
+  </dimen>
+  <dimen name="size_150dp">
+    250.0dp
+  </dimen>
+  <dimen name="size_152dp">
+    253.33dp
+  </dimen>
+  <dimen name="size_204dp">
+    340.0dp
+  </dimen>
+  <dimen name="size_6dp">
+    10.0dp
+  </dimen>
+  <dimen name="size_7dp">
+    11.67dp
+  </dimen>
+  <dimen name="size_13dp">
+    21.67dp
+  </dimen>
+  <dimen name="size_18dp">
+    30.0dp
+  </dimen>
+  <dimen name="size_250dp">
+    416.67dp
+  </dimen>
+  <dimen name="size_17dp">
+    28.33dp
+  </dimen>
+  <dimen name="size_27dp">
+    45.0dp
+  </dimen>
+  <dimen name="size_22dp">
+    36.67dp
+  </dimen>
+  <dimen name="size_9dp">
+    15.0dp
+  </dimen>
+  <dimen name="size_1dp">
+    1.67dp
+  </dimen>
+  <dimen name="size_4dp">
+    6.67dp
+  </dimen>
+  <dimen name="size_36dp">
+    60.0dp
+  </dimen>
+  <dimen name="dp_1">
+    1.67dp
+  </dimen>
+  <dimen name="size_66dp">
+    110.0dp
+  </dimen>
+  <dimen name="size_75dp">
+    125.0dp
+  </dimen>
+  <dimen name="size_90dp">
+    150.0dp
+  </dimen>
+  <dimen name="size_70dp">
+    116.67dp
+  </dimen>
+  <dimen name="size_120dp">
+    200.0dp
+  </dimen>
+  <dimen name="size_130dp">
+    216.67dp
+  </dimen>
+  <dimen name="size_80dp">
+    133.33dp
+  </dimen>
+  <dimen name="size_82dp">
+    136.67dp
+  </dimen>
+  <dimen name="size_65dp">
+    108.33dp
+  </dimen>
+  <dimen name="size_55dp">
+    91.67dp
+  </dimen>
+  <dimen name="size_21dp">
+    35.0dp
+  </dimen>
+  <dimen name="size_23dp">
+    38.33dp
+  </dimen>
+  <dimen name="size_67dp">
+    111.67dp
+  </dimen>
+  <dimen name="size_183dp">
+    305.0dp
+  </dimen>
+  <dimen name="size_34dp">
+    56.67dp
+  </dimen>
+  <dimen name="size_62dp">
+    103.33dp
+  </dimen>
+  <dimen name="size_28dp">
+    46.67dp
+  </dimen>
+  <dimen name="size_35dp">
+    58.33dp
+  </dimen>
+  <dimen name="size_46dp">
+    76.67dp
+  </dimen>
+  <dimen name="size_63dp">
+    105.0dp
+  </dimen>
+  <dimen name="size_117dp">
+    195.0dp
+  </dimen>
+  <dimen name="size_121dp">
+    201.67dp
+  </dimen>
+  <dimen name="size_78dp">
+    130.0dp
+  </dimen>
+  <dimen name="size_29dp">
+    48.33dp
+  </dimen>
+  <dimen name="size_31dp">
+    51.67dp
+  </dimen>
+  <dimen name="size_33dp">
+    55.0dp
+  </dimen>
+  <dimen name="size_26dp">
+    43.33dp
+  </dimen>
+  <dimen name="size_126dp">
+    210.0dp
+  </dimen>
+  <dimen name="size_170dp">
+    283.33dp
+  </dimen>
+  <dimen name="size_160dp">
+    266.67dp
+  </dimen>
+  <dimen name="size_112dp">
+    186.67dp
+  </dimen>
+  <dimen name="size_200dp">
+    333.33dp
+  </dimen>
+  <dimen name="size_14dp">
+    23.33dp
+  </dimen>
+  <dimen name="size_84dp">
+    140.0dp
+  </dimen>
+  <dimen name="size_59dp">
+    98.33dp
+  </dimen>
+  <dimen name="size_60dp">
+    100.0dp
+  </dimen>
+  <dimen name="size_negative_60dp">
+    -100.0dp
+  </dimen>
+  
+
+    //constant
+    
+  <dimen name="dp_6">
+    10.0dp
+  </dimen>
+  <dimen name="dp_8">
+    13.33dp
+  </dimen>
+  <dimen name="dp_5">
+    8.33dp
+  </dimen>
+  <dimen name="dp_10">
+    16.67dp
+  </dimen>
+  <dimen name="dp_2">
+    3.33dp
+  </dimen>
+  <dimen name="size_210dp">
+    350.0dp
+  </dimen>
+  <dimen name="size_220dp">
+    366.67dp
+  </dimen>
+  <dimen name="size_140dp">
+    233.33dp
+  </dimen>
+  <dimen name="size_145dp">
+    241.67dp
+  </dimen>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:paddingTop="@dimen/size_13dp"
+    android:paddingBottom="@dimen/size_3dp"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/ivItemImage"
+        android:layout_width="@dimen/size_75dp"
+        android:layout_height="@dimen/size_50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_logo_splash"
+        app:layout_constraintBottom_toBottomOf="@id/tvItemTime"
+        app:layout_constraintTop_toTopOf="@id/tvItemName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_8dp"
+        android:text="Thuốc mát gan"
+        android:textColor="@color/color333333"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivItemImage"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvItemPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/color333333"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvItemName"
+        tools:text="1.499.000đ" />
+
+
+    <TextView
+        android:id="@+id/tvItemAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color333333"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvItemPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvItemPrice"
+        tools:ignore="MissingConstraints"
+        tools:text="SL: 2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

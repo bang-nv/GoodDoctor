@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#024F87</color>
+    <color name="colorPrimaryDark">#024F87</color>
+    <color name="colorAccent">#024F87</color>
+
+
+    <color name="colorBDBDBD">#BDBDBD</color>
+    <color name="colorA4A4A4">#A4A4A4</color>
+    <color name="colorB4B4B4">#B4B4B4</color>
+    <color name="color898989">#898989</color>
+    <color name="color828282">#828282</color>
+    <color name="color858585">#858585</color>
+    <color name="color252525">#252525</color>
+    <color name="color333333">#333333</color>
+    <color name="color202020">#202020</color>
+    <color name="color666666">#666666</color>
+    <color name="color35729F">#35729F</color>
+    <color name="colorCB0409">#CB0409</color>
+    <color name="colorEF3030">#EF3030</color>
+    <color name="blackT20">#38000000</color>
+    <color name="colorEEEEEE">#EEEEEE</color>
+    <color name="color707070">#707070</color>
+    <color name="color3A3A3A">#3A3A3A</color>
+    <color name="colorDBDBDB">#DBDBDB</color>
+    <color name="colorFFF701">#FEF001</color>
+    <color name="colorE9E4E4">#E9E4E4</color>
+    <color name="colorE0E0E0">#E0E0E0</color>
+    <color name="colorFDFDFD">#FDFDFD</color>
+    <color name="colorF6AE2D">#F6AE2D</color>
+    <color name="colorF25F5C">#F25F5C</color>
+    <color name="color1EC803">#1EC803</color>
+    <color name="color54595B">#54595B</color>
+    <color name="colorF25959">#F25959</color>
+    <color name="color5C5C5C">#5C5C5C</color>
+    <color name="color7E7E7E">#7E7E7E</color>
+    <color name="colorFF8800">#EE1B24</color>
+    <color name="color1884EF">#EE1B24</color>
+    <color name="colorTextGray">#33242937</color>
+
+    <color name="colorSelectedText">#024F87</color>
+    <color name="colorUnselectedTabColor">#898989</color>
+
+
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
+
+    <color name="color000000">#000000</color>
+    <color name="color242937">#242937</color>
+    <color name="colorFF8800Transparent">#EE1B24</color>
+    <color name="color33242937">#33242937</color>
+    <color name="color231F20">#231F20</color>
+    <color name="color4D4D4D">#4D4D4D</color>
+    <color name="color717171">#717171</color>
+    <color name="color0ABB0A">#0ABB0A</color>
+    <color name="colorFFFFFF">#FFFFFF</color>
+    <color name="color999999">#999999</color>
+    <color name="colorF5F5F5">#F5F5F5</color>
+
+    <color name="color80FFFFFF">#80FFFFFF</color>
+    <color name="color808080">#808080</color>
+    <color name="colorE6E6E6">#e6e6e6</color>
+    <color name="colorF2F2F2">#F2F2F2</color>
+
+    <color name="color00FF00">#00FF00</color>
+    <color name="color606060">#606060</color>
+    <color name="color646464">#646464</color>
+    <color name="color1BB01A">#1BB01A</color>
+
+    <color name="colorFF0000">#FF0000</color>
+
+    <color name="colorE8E7E7">#E8E7E7</color>
+    <color name="colorCFCFCF">#CFCFCF</color>
+    <color name="colorTextGreen">#0ABB0A</color>
+    <color name="colorText">#242937</color>
+
+    <color name="colorD7CC75">#D7CC75</color>
+    <color name="colorFEC92D">#FEC92D</color>
+    <color name="colorF92323">#F92323</color>
+
+    <color name="color757575">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+
+</resources>

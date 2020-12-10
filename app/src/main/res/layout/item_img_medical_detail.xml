@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_150dp"
+    android:layout_height="@dimen/size_150dp">
+
+    <ImageView
+        android:paddingRight="@dimen/size_10dp"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:id="@+id/imgItemMedicalDetail"
+        android:layout_width="@dimen/size_150dp"
+        android:layout_height="@dimen/size_150dp" />
+
+</LinearLayout>

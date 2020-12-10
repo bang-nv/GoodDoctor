@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/size_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="@dimen/size_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="Thông tin bệnh nhân"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDate5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="Tên: Lê Văn A" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvPhone5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="Booking date" />
+
+        <TextView
+            android:id="@+id/tvAddress5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:text="Thời gian: 21-10-2000" />
+
+        <TextView
+            android:id="@+id/tvUpdated5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:text="Thời gian: 21-10-2000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBookingAdress5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:text="Địa điểm: Nhận tại cửa hàng"
+            android:visibility="gone" />
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="@dimen/size_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="Dịch vụ"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rcvServiceMedicalDetail5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp" />
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền: "
+                android:textSize="@dimen/size_16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTotalMoney5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="400000"
+                android:textSize="@dimen/size_16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp">
+
+            <TextView
+                android:id="@+id/tvTtPayment5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình thức thanh toán: "
+                android:textSize="@dimen/size_16dp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/tvPayment5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvTtPayment5"
+                android:text="Tiasdasdasdt"
+                android:textColor="@color/colorEF3030"
+                android:textSize="@dimen/size_16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvNote5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:text="Ghi : Khôngsdasaassdasdads " />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp">
+
+            <TextView
+                android:id="@+id/tvTtFinish5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Tình trạng: "
+                android:textSize="@dimen/size_16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvTtFinish5"
+                android:text="Hoàasdasdsadnh"
+                android:textColor="@color/colorEF3030"
+                android:textSize="@dimen/size_16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp">
+
+            <TextView
+                android:id="@+id/tvTtPay5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Thanh toán: "
+                android:textSize="@dimen/size_16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvTtPay5"
+                android:text="Chưaadasdasd"
+                android:textColor="#102597"
+                android:textSize="@dimen/size_16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="@dimen/size_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="Hồ sơ bệnh án"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rcvImgMedicalDetail5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp" />
+
+
+        <TextView
+            android:textSize="@dimen/size_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="Mô tả bệnh: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescription5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="dasdjdasjdadasdj"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="Sản phẩm: "
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:visibility="gone"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_product_medical_record_detail" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "vn.haui.gooddoctor"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //cardview
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //circular imageview
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+
+    //recyclerview
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
+    //PhotoView
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    //RxAndroid + RxJava
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation "io.reactivex.rxjava3:rxjava:3.0.7"
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.8.1"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+
+    // JSON Parsing
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // Image Slide
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    // Image Picker
+    implementation 'com.github.nguyenhoanglam:ImagePicker:1.4.3'
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+
+    //Easy Permissions
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    // Validation
+    implementation 'com.basgeekball:awesome-validation:4.2'
+
+    // Keyboard Visibility Event ==> check Keyboard -> Ẩn Bottom Navigation khi vào màn chat
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC2'
+
+    // Custom Bottom Navigation
+    implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
+
+    //material
+    implementation 'com.google.android.material:material:1.2.1'
+
+//    // OTP View
+//    implementation 'com.github.aabhasr1:otpview:1.1.2-ktx'
+//
+//    // Nice Spinner
+//    implementation 'com.github.arcadefire:nice-spinner:1.4.5'
+}

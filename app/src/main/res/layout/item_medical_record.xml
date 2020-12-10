@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingVertical="@dimen/size_8dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgItemMedicalRecord"
+        android:layout_width="107dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="@dimen/size_8dp"
+        android:src="@drawable/item_medical_record" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imgItemMedicalRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvServiceName5"
+            android:text="Máy đo huyết áp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvBookAddress"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="Số lượng: 1 cái"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_6dp"
+            android:maxLines="1"
+            android:text="Hoàn thành" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/red"
+            android:layout_gravity="right"
+            android:id="@+id/tvBookDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="21-10-2000" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@color/color_white"
+    android:focusableInTouchMode="true">
+
+    <include
+        layout="@layout/ui_toolbar"
+        android:id="@+id/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line1"
+        android:paddingHorizontal="@dimen/size_8dp"
+        android:layout_below="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvt_is_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Giỏ hàng trống !!!"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Đặt mua"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/size_16dp"
+        android:layout_marginBottom="@dimen/size_10dp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_above="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng hàng: "
+        android:textStyle="bold"
+        android:layout_above="@+id/textView19"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:paddingVertical="@dimen/size_10dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thành tiền: "
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:layout_marginBottom="@dimen/size_10dp" />
+
+    <TextView
+        android:id="@+id/tvt_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_above="@+id/textView19"
+        android:layout_toEndOf="@+id/textView18"
+        android:layout_marginStart="@dimen/size_10dp"
+        android:paddingVertical="@dimen/size_10dp" />
+
+    <TextView
+        android:textColor="@color/colorCB0409"
+        android:id="@+id/tvt_total_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.000.000đ"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView19"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginBottom="@dimen/size_10dp" />
+</RelativeLayout>

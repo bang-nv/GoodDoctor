@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/size_25dp"
+                android:layout_height="@dimen/size_25dp"
+                android:src="@drawable/ic_back"
+                android:layout_marginTop="@dimen/size_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="@dimen/size_106dp"
+                android:layout_height="@dimen/size_106dp"
+                android:src="@drawable/ic_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvTitleRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_register"
+                android:textColor="@color/color252525"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+            <TextView
+                android:id="@+id/tvTitleFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:text="@string/str_full_name"
+                android:textColor="@color/color252525"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleRegister" />
+
+            <EditText
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:background="@drawable/bg_border_radius"
+                android:hint="@string/str_input_full_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/size_8dp"
+                android:paddingVertical="@dimen/size_12dp"
+                android:textColorHint="@color/color898989"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleFullName"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/tvTitlePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:text="@string/str_phone"
+                android:textColor="@color/color252525"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtFullName" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:background="@drawable/bg_border_radius"
+                android:digits="@string/digits_number"
+                android:hint="@string/title_input_phone"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:maxLength="10"
+                android:paddingHorizontal="@dimen/size_8dp"
+                android:paddingVertical="@dimen/size_12dp"
+                android:textColorHint="@color/color898989"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitlePhone"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/tvTitlePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:text="@string/str_password"
+                android:textColor="@color/color252525"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtPhone" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:background="@drawable/bg_border_radius"
+                android:hint="@string/title_input_password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/size_8dp"
+                android:paddingVertical="@dimen/size_12dp"
+                android:textColorHint="@color/color898989"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitlePassword"
+                tools:ignore="TextFields" />
+
+            <ImageView
+                android:id="@+id/ivHideShowPassword"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:padding="@dimen/size_5dp"
+                android:src="@drawable/ic_show"
+                android:tint="@color/colorPrimary"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/edtPassword"
+                app:layout_constraintEnd_toEndOf="@id/edtPassword"
+                app:layout_constraintTop_toTopOf="@id/edtPassword"
+                tools:ignore="UseAppTint" />
+
+
+            <TextView
+                android:id="@+id/tvTitleConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:text="@string/str_confirm_password"
+                android:textColor="@color/color252525"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtPassword" />
+
+            <EditText
+                android:id="@+id/edtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:background="@drawable/bg_border_radius"
+                android:hint="@string/str_retype_password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/size_8dp"
+                android:paddingVertical="@dimen/size_12dp"
+                android:textColorHint="@color/color898989"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleConfirmPassword"
+                tools:ignore="TextFields" />
+
+            <ImageView
+                android:id="@+id/ivHideShowConfirmPassword"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:padding="@dimen/size_5dp"
+                android:src="@drawable/ic_show"
+                android:tint="@color/colorPrimary"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/edtConfirmPassword"
+                app:layout_constraintEnd_toEndOf="@id/edtConfirmPassword"
+                app:layout_constraintTop_toTopOf="@id/edtConfirmPassword"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/tvTitleRefCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:text="@string/str_ref_code"
+                android:textColor="@color/color252525"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtConfirmPassword" />
+
+            <EditText
+                android:id="@+id/edtRefCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_border_radius"
+                android:hint="@string/str_input_ref_code"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/size_8dp"
+                android:paddingVertical="@dimen/size_12dp"
+                android:textColorHint="@color/color898989"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleRefCode"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/tvTitleVerificationCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:text="@string/str_verification_code"
+                android:textColor="@color/color252525"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtRefCode" />
+
+            <RelativeLayout
+                android:id="@+id/rlVerificationCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:background="@drawable/bg_border_radius"
+                android:paddingBottom="@dimen/size_2dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleVerificationCode"
+                tools:layout_editor_absoluteX="20dp">
+
+                <EditText
+                    android:id="@+id/edtVerificationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/tvResendOTP"
+                    android:background="@null"
+                    android:digits="@string/digits_number"
+                    android:hint="@string/str_input_verification_code"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned"
+                    android:maxLines="1"
+                    android:paddingHorizontal="@dimen/size_8dp"
+                    android:paddingVertical="@dimen/size_12dp"
+                    android:textColorHint="@color/color898989"
+                    android:textSize="@dimen/text_size_14sp"
+                    tools:ignore="TextFields" />
+
+                <TextView
+                    android:id="@+id/tvResendOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="@dimen/size_8dp"
+                    android:text="@string/str_get_code"
+                    android:textColor="@color/colorCB0409"
+                    android:textSize="@dimen/text_size_14sp"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:background="@drawable/bg_button_highlight"
+                android:gravity="center"
+                android:text="@string/str_register"
+                android:textAllCaps="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rlVerificationCode" />
+
+            <TextView
+                android:id="@+id/tvRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:gravity="center"
+                android:text="@string/title_rules"
+                android:textColor="@color/color898989"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnRegister" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:gravity="center"
+                android:text="@string/title_login_registered"
+                android:textColor="@color/color898989"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRules" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

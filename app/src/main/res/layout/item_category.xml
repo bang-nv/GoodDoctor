@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvItemCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="@dimen/size_8dp"
+        android:paddingVertical="@dimen/size_8dp"
+        android:textColor="@color/color898989"
+        android:textSize="@dimen/text_size_14sp"
+        tools:text="Điều dưỡng chăm sóc" />
+
+</LinearLayout>

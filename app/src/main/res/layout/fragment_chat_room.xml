@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentChat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:ignore="MissingPrefix">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFDFDFD"
+        android:paddingHorizontal="@dimen/size_16dp"
+        android:paddingVertical="@dimen/size_10dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ic_back"
+            android:backgroundTint="@color/black"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingEnd="@dimen/size_10dp"
+            android:paddingBottom="@dimen/size_5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginEnd="@dimen/size_5dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="1dp"
+            app:layout_constraintEnd_toStartOf="@id/tvName"
+            app:layout_constraintStart_toEndOf="@+id/ivBack" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:text="Vina Doctor"
+            android:textColor="@color/color252525"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/civAvatar"
+            app:layout_constraintStart_toEndOf="@id/civAvatar"
+            app:layout_constraintTop_toTopOf="@+id/civAvatar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_5dp"
+        android:background="@color/colorE9E4E4"
+        app:layout_constraintBottom_toTopOf="@id/rcChatHistory"
+        app:layout_constraintTop_toBottomOf="@id/ctlToolbar"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcChatHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorFDFDFD"
+        android:paddingHorizontal="@dimen/size_16dp"
+        app:layout_constraintBottom_toTopOf="@id/ctlSenderBox"
+        app:layout_constraintTop_toBottomOf="@id/vDivider" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlSenderBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_9dp"
+        android:paddingBottom="@dimen/size_9dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/llAllActions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/size_3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ctEditTextChat"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/ivMoreAction"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:paddingVertical="@dimen/size_5dp"
+                android:paddingEnd="@dimen/size_10dp"
+                android:paddingStart="@dimen/size_3dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_right_chat"
+                android:tint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@id/tvItemTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/llUserCreated"
+                tools:ignore="MissingConstraints,UseAppTint" />
+
+            <LinearLayout
+                android:id="@+id/llActions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:contentDescription="@null"
+                    android:paddingHorizontal="@dimen/size_2dp"
+                    android:paddingVertical="@dimen/size_4dp"
+                    android:src="@drawable/ic_camera_26_21"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivImageLib"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_marginStart="@dimen/size_6dp"
+                    android:layout_marginEnd="@dimen/size_6dp"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/size_5dp"
+                    android:src="@drawable/ic_image_lib_20_20"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivCamera"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ctEditTextChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:background="@drawable/bg_chat_bottom"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp"
+            app:layout_constraintEnd_toStartOf="@id/ivSentMsg"
+            app:layout_constraintStart_toEndOf="@id/llAllActions"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/edtMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="5"
+                android:textSize="@dimen/text_size_16sp"
+                android:hint="Nhập tin nhắn"
+                android:inputType="textCapSentences|textMultiLine" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivSentMsg"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:contentDescription="@null"
+            android:padding="@dimen/size_5dp"
+            android:src="@drawable/ic_send_vector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/size_3dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

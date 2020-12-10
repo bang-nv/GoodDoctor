@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_3dp"
+    android:layout_marginBottom="@dimen/size_3dp"
+    android:background="@color/color_white">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/civAvatar"
+        android:layout_width="@dimen/size_25dp"
+        android:layout_height="@dimen/size_25dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_5dp"
+        android:background="@drawable/bkg_receiver_round"
+        android:maxWidth="@dimen/size_250dp"
+        android:paddingStart="@dimen/size_15dp"
+        android:paddingTop="@dimen/size_5dp"
+        android:paddingEnd="@dimen/size_15dp"
+        android:paddingBottom="@dimen/size_5dp"
+        android:textColor="#3A3A3A"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintStart_toEndOf="@id/civAvatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Shop xin chào bạn." />
+</androidx.constraintlayout.widget.ConstraintLayout>

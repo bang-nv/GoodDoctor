@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:paddingTop="@dimen/size_13dp"
+    android:paddingBottom="@dimen/size_3dp"
+    tools:ignore="MissingPrefix">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/civAvatar"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@id/tvLastMsg"
+        app:layout_constraintTop_toTopOf="@id/tvName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23/09/2020 13:45"
+        android:textColor="@color/color898989"
+        android:textSize="@dimen/text_size_10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_6dp"
+        android:layout_marginEnd="@dimen/size_10dp"
+        android:text="Optimus Prime"
+        android:textColor="@color/color252525"
+        android:textSize="@dimen/text_size_12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tvCreated"
+        app:layout_constraintStart_toEndOf="@id/civAvatar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvLastMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="t was wonderful to talk with you. I must be going. I’ve got to meeting in HCM."
+        android:textColor="@color/color828282"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintEnd_toEndOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

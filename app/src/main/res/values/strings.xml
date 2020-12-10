@@ -1,0 +1,271 @@
+<resources>
+    <!-- APP -->
+    <string name="app_name">Good Doctor</string>
+    <string name="app_shop_phone_number">0987875427</string>
+    <string name="app_market_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_google_play_store_link">"market://details?id="</string>
+    <string name="default_notification_channel_id">"VinaDoctor: "</string>
+
+    <!--FONT-->
+    <string name="font_HelveticaNeue_Regular">fonts/HelveticaNeue.ttf</string>
+    <string name="font_HelveticaNeue_Bold">fonts/HelveticaNeue-Bold.ttf</string>
+    <string name="font_HelveticaNeue_Medium">fonts/HelveticaNeue-Medium.ttf</string>
+    <string name="font_HelveticaNeue_Light">fonts/HelveticaNeue-Light.ttf</string>
+    <string name="font_HelveticaNeue_Italic">fonts/HelveticaNeue-Italic.ttf</string>
+
+    <!-- digits -->
+    <string name="digits_number">0123456789</string>
+
+    <!-- Dang nhap -->
+    <string name="title_login">Đăng nhập</string>
+    <string name="str_login">Đăng nhập</string>
+    <string name="str_phone">Số điện thoại</string>
+    <string name="title_input_phone">Nhập số điện thoại</string>
+    <string name="str_password">Mật khẩu</string>
+    <string name="title_input_password">Nhập mật khẩu</string>
+    <string name="str_forgot_password">Quên mật khẩu?</string>
+    <string name="title_other_sign_in">Hoặc đăng nhập với</string>
+    <string name="title_register_login"><span><u>Chưa có tài Khoản?</u><p><font color="#35729F"> Đăng ký </font></p><u>tại đây.</u></span></string>
+
+    <!-- Dang ky -->
+    <string name="str_register">Đăng ký</string>
+    <string name="str_full_name">Họ và tên</string>
+    <string name="str_input_full_name">Nhập họ và tên</string>
+    <string name="str_confirm_password">Xác nhận mật khẩu</string>
+    <string name="str_retype_password">Nhập lại mật khẩu</string>
+    <string name="str_ref_code">Mã giới thiệu (có thể bỏ qua)</string>
+    <string name="str_input_ref_code">Nhập mã giới thiệu</string>
+    <string name="str_verification_code">Mã xác nhận</string>
+    <string name="str_input_verification_code">Nhập mã xác nhận</string>
+    <string name="str_get_code">Lấy mã</string>
+    <string name="title_rules"><span> Bằng việc đăng ký, bạn đã đồng ý với<a href="https://chapp.com.vn/tin-tuc/"><font color="#35729F"> Điều khoản dịch vụ</font></a> &amp;<a href="https://chapp.com.vn/lien-he/"><font color="#35729F"> Chính sách riêng tư</font></a> của chúng tôi.</span></string>
+    <string name="title_login_registered"><span><u>Bạn có tài Khoản?</u><p><font color="#35729F"> Đăng nhập </font></p><u>tại đây.</u></span></string>
+
+    <!-- Quen mat khau -->
+    <string name="title_forgot_password">Quên mật khẩu</string>
+    <string name="title_update_password">Cập nhật mật khẩu</string>
+    <string name="str_contact_us"><span> Nếu bạn gặp khó khăn. \n Xin vui lòng gọi<p><font color="#35729F"> 0987875427 </font></p></span></string>
+
+
+    <!-- Profile -->
+    <string name="title_wallet">Ví của tôi</string>
+    <string name="title_medical_record">Hồ sơ bệnh án</string>
+    <string name="title_feed_back">Cảm nhận dịch </string>
+    <string name="title_notification">Thông báo</string>
+    <string name="title_change_password">Đổi mật khẩu</string>
+    <string name="title_rating_app">Đánh giá app</string>
+    <string name="title_contact">Thông tin liên hệ</string>
+    <string name="title_share">Chia sẻ</string>
+    <string name="title_logout">Đăng xuất</string>
+
+    <!-- Profile Detail -->
+
+    <string name="title_fullname">Họ và tên</string>
+    <string name="title_phonenumber">Số điện thoại</string>
+    <string name="title_address">Địa chỉ</string>
+    <string name="title_email">Email</string>
+    <string name="title_fullname_hint">Nhập họ tên</string>
+    <string name="title_phonenumber_hint">Nhập số điện thoại</string>
+    <string name="title_address_hint">Nhập địa chỉ</string>
+    <string name="title_email_hint">Nhập email</string>
+
+
+    <!-- Feedback -->
+    <string name="title_other_rate">Viết đánh giá</string>
+    <string name="title_send">Gửi</string>
+
+    <!-- Doi mat khau -->
+    <string name="str_old_password">Mật khẩu cũ</string>
+    <string name="title_input_old_password">Nhập mật khẩu cũ</string>
+    <string name="str_new_password">Mật khẩu mới</string>
+    <string name="title_input_new_password">Nhập mật khẩu mới</string>
+    <string name="str_confirm_new_password">Xác nhận mật khẩu mới</string>
+    <string name="str_retype_new_password">Nhập lại mật khẩu mới</string>
+    <string name="str_save_password">Lưu mật khẩu</string>
+
+    <!-- Chat Room - (Navi_bottom) -->
+    <string name="str_customer_link_chat">Danh sách bác sĩ có mã đã liên kết</string>
+    <string name="str_recent_message">Tin nhắn gần đây</string>
+
+    <!-- Tich diem (Accumulate Point) - (Navi_bottom) -->
+    <string name="str_history_accumulate_point">Lịch sử tích điểm</string>
+
+    <!-- Chat History Service - (Navi_bottom) -->
+    <string name="str_total_money">Tổng tiền:</string>
+    <string name="str_total_product">Tổng sản phẩm</string>
+    <string name="str_payment_type">Hình thức thanh toán:</string>
+    <string name="str_note">Ghi chú:</string>
+    <string name="str_status">Tình trạng:</string>
+    <string name="str_book_service">Đặt lịch</string>
+
+
+    <!-- Schedule Product -->
+    <string name="str_total_qty">Số lượng:</string>
+    <string name="str_total_money_pro">Tổng tiền hàng:</string>
+    <string name="title_not_detect_current_location">Chưa có thông tin địa chỉ của shop.</string>
+    <string name="title_add_receive">Nhận hàng tại cửa hàng</string>
+    <string name="title_at_shop">Tại cơ sở</string>
+    <string name="title_at_custom_address">Tại địa chỉ cá nhân</string>
+    <string name="title_input_address">Nhập địa chỉ</string>
+    <string name="title_order_location">Địa chỉ nhận hàng</string>
+    <string name="title_payment_type">Phương thức thanh toán</string>
+    <string name="str_total_money_app_wallet">*Số dư trong ví app:</string>
+    <string name="str_specially_note">Yêu cầu đặc biệt khác</string>
+    <string name="str_schedule">Đặt mua</string>
+    <string name="str_schedule_service">Đặt lịch</string>
+    <!-- payment -->
+    <string name="str_pay_app_wallet">Ví app</string>
+    <string name="str_pay_bank_card">Thẻ thanh toán (Nội địa, quốc tế)</string>
+    <string name="str_pay_electronic_wallet">Ví điện tử (Momo, VNPay)</string>
+    <string name="str_pay_cash">Tiền mặt</string>
+
+    <string name="str_pay_online_bank_card">Thanh toán online / Ví điện tử</string>
+
+    <!-- màn product -->
+    <string name="title_list_customer_order">Danh sách khách đặt</string>
+    <string name="title_view_detail">Xem chi tiết</string>
+    <string name="title_cancel">Huỷ</string>
+    <string name="title_add_product">Thêm sản phẩm</string>
+    <string name="label_add_product">Thêm sản phẩm của bạn</string>
+    <string name="label_name_product">Tên sản phẩm</string>
+    <string name="label_type_product">Loại sản phẩm</string>
+    <string name="label_sale_price">Giá khuyến mãi</string>
+    <string name="label_price">Giá sản phẩm</string>
+    <string name="label_note">Ghi chú</string>
+    <string name="label_button_upload_image">Tải ảnh sản phẩm lên</string>
+    <string name="label_button_add_product">Thêm</string>
+    <string name="title_add_code">Thêm mã</string>
+    <string name="title_order">Đặt mua</string>
+    <string name="title_schedule">Đặt quà</string>
+    <string name="title_wellcome">Chào mừng</string>
+    <string name="title_order_date">Chọn ngày đặt</string>
+    <string name="title_order_time">Chọn giờ đặt</string>
+
+    <string name="title_other_requirement">Yêu cầu đặc biệt khác</string>
+
+    <string name="title_scheduled_confirm">Xác nhận đơn hàng</string>
+    <string name="title_input_code">Hãy nhập mã cửa hàng, shop của bạn</string>
+    <string name="title_shop_linked">Shop đã liên kết mã</string>
+    <string name="title_insert_code">Nhập mã liên kết</string>
+    <string name="title_rating_service">Đánh giá dịch vụ đang sử dụng</string>
+    <string name="title_salon">Salon</string>
+    <string name="title_shop">Cửa hàng</string>
+    <string name="title_staff">Nhân viên</string>
+
+    <string name="title_count">Số lượng</string>
+    <string name="title_price">Giá tiền</string>
+    <string name="title_total_count">Tổng số lượng: </string>
+    <string name="title_total_price">Tổng tiền:</string>
+    <string name="title_shoose_shop">Chọn shop:</string>
+
+    <string name="msg_error_empty_name">Vui lòng nhập họ và tên</string>
+    <string name="msg_error_empty_phone">Vui lòng nhập số điện thoại</string>
+    <string name="msg_error_empty_password">Vui lòng nhập mật khẩu</string>
+    <string name="msg_error_empty_repassword">Vui lòng nhập mật khẩu nhập lại</string>
+    <string name="msg_error_empty_refcode">Vui lòng nhập mã giới thiệu</string>
+    <string name="msg_error_invalid_phone">Vui lòng nhập số điện thoại hợp lệ</string>
+    <string name="msg_error_invalid_repassword">Mật khẩu nhập lại không khớp</string>
+    <string name="msg_error_empty_otp">Vui lòng nhập mã OTP</string>
+    <string name="msg_error_invalid_otp">Mã OTP không khớp</string>
+    <string name="msg_error_empty_code">Vui lòng nhập mã liên kết</string>
+    <string name="msg_error_hide_post">Sản phẩm/ dịch vụ này đã bị ẩn. Vui lòng chọn sản phẩm hoặc dịch vụ khác.</string>
+    <string name="msg_error_invalid_refcode">Vui lòng nhập mã giới thiệu hợp lệ</string>
+
+
+    <string name="msg_error_login_google">Không thể đăng nhập với Google</string>
+    <string name="msg_error_login_google_loss_params">Chưa lấy được đầy đủ thông tin đăng nhập của bạn</string>
+    <string name="msg_success_booking">Bạn đã đặt quà thành công</string>
+    <string name="title_name_booking">Tên sản phẩm:</string>
+    <string name="title_count_booking">Số lượng:</string>
+    <string name="title_total_price_booking">Tổng tiền:</string>
+    <string name="title_price_booking">Giá tiền:</string>
+    <string name="msg_no_shop">Bạn chưa liên kết với shop nào có dịch vụ này</string>
+    <string name="title_booking_listing">Danh sách đơn hàng</string>
+    <string name="title_shop_infor">Thông tin chủ shop</string>
+    <string name="title_shop_address">Địa điểm</string>
+    <string name="title_customer_infor">Thông tin người đặt</string>
+    <string name="title_detail_product">Chi tiết sản phẩm</string>
+    <string name="title_detail_history">Chi tiết lịch sử đặt quà</string>
+    <string name="title_detail_notification">Chi tiết thông báo</string>
+    <string name="title_detail_booking">Chi tiết đơn hàng</string>
+    <string name="title_delete_product">Xoá</string>
+    <string name="msg_error_validate_address">Bạn cần nhập đủ thông tin địa chỉ nhận hàng</string>
+    <string name="msg_back_again_to_exit">Nhấn phím BACK lần nữa để thoát ứng dụng</string>
+    <string name="msg_empty_phone">Bạn chưa nhập số điện thoại</string>
+    <string name="msg_change_password_success">Đổi mật khẩu thành công</string>
+    <string name="title_accept">Đồng ý</string>
+    <string name="title_home_add_code">Thêm mã</string>
+    <string name="title_home_search">Tìm kiếm</string>
+
+    <string name="str_login_in_register"><span><u>Bạn có tài Khoản?<p><font color="#4A97F7"> Đăng nhập</font></p> tại đây.</u></span></string>
+    <string name="title_policy_and_tearms"><u>Điều khoản dịch vụ &amp; Chính sách sử dụng</u></string>
+    <!--    <string name="title_code">Nhập mã giới thiệu ( có thể bỏ qua )</string>-->
+    <string name="title_code">Nhập mã giới thiệu (bắt buộc)</string>
+    <string name="str_count_down_time">mã xác thực còn %ss</string>
+    <string name="str_btn_confirm">Gửi mã xác thực</string>
+    <string name="str_home">Trang chủ</string>
+    <string name="str_contact"> Nếu bạn gặp khó khăn \n Xin vui lòng gọi <b>0987875427</b> </string>
+    <string name="str_welcome_shop">Nitiny chào mừng!</string>
+    <string name="str_view_all">Xem tất cả</string>
+    <string name="str_promotion">Khuyến mãi</string>
+    <string name="str_newspaper">Tin tức</string>
+    <string name="str_service">Quà tặng</string>
+    <string name="str_production">Sản phẩm</string>
+    <string name="str_news_paper">Tin tức</string>
+    <string name="str_search_product">Tìm kiếm sản phẩm</string>
+    <string name="str_category">Danh mục:</string>
+    <string name="str_total_number">Số lượng: </string>
+    <string name="str_price_buy">Giá:</string>
+    <string name="str_price_sale">Giá khuyến mãi:</string>
+    <string name="str_wholesate">Giá sỉ:</string>  <!--them-->
+    <string name="str_type">Loại:</string>
+    <string name="str_descrip">Mô tả:</string>
+    <string name="title_order_in_shop">Nhận hàng tại shop</string>
+    <string name="str_date_apply">Ngày ap dụng:</string>
+    <string name="str_date_expried">Hạn áp dung:</string>
+    <string name="title_detail_promotion">Chi tiết khuyến mãi</string>
+    <string name="title_detail_news_paper">Chi tiết tin tức</string>
+    <string name="title_accumulate_points">Tích điểm</string>
+    <string name="str_choose_quantity">Chọn số lượng đặt mua</string>
+    <string name="str_price">Giá</string>
+    <string name="str_add_to_cart">Thêm vào giỏ hàng</string>
+
+    <!-- Confỉm -->
+    <string name="title_confirm">Xác nhận</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--    bot navi-->
+    <string name="title_bot_home">Trang chủ</string>
+    <string name="title_bot_chat_doctor">Chat với BS</string>
+    <string name="title_bot_history_service">Lịch sử d.vụ</string>
+    <string name="title_bot_accu_point">Tích điểm</string>
+    <string name="title_bot_profile">Cá nhân</string>
+
+    <!--    bot navi-->
+    <string name="title_toolbar_home">Trang chủ</string>
+    <string name="title_toolbar_chat_doctor">Chat với bác sĩ</string>
+    <string name="title_toolbar_history_service">Lịch sử dịch vụ</string>
+    <string name="title_toolbar_accu_point">Tích điểm</string>
+    <string name="title_toolbar_profile">Cá nhân</string>
+
+
+    <string name="backable_edit_profile">Chỉnh sửa thông tin cá nhân</string>
+    <string name="backable_feedback">Cảm nhận dịch vụ</string>
+    <string name="backable_notification">Thông báo</string>
+    <string name="backable_change_password">Đổi mật khẩu</string>
+    <string name="backable_all_category_home">Tất cả danh mục</string>
+    <string name="backable_my_wallet">Ví của tôi</string>
+    <string name="backable_medical">Hồ sơ bệnh án</string>
+    <string name="chi_tiet_km">Chi tiết khuyến mại</string>
+    <string name="chi_tiet_news">Chi tiết tin tức</string>
+    <string name="chi_tiet_sp">Chi tiết sản phẩm</string>
+    <string name="chi_tiet_dich_vu">Chi tiết dịch vụ</string>
+    <string name="backable_schedule_service">Đặt lịch</string>
+    <string name="backable_confirm_service">Xác nhận đặt lịch</string>
+    <string name="str_contains_white_space">Mật khẩu không được chứa khoảng trắng</string>
+    <string name="message_request_unknow_error">Đã xảy ra lỗi không xác định. Vui lòng kiểm tra kết nối mạng và thử lại!</string>
+
+
+</resources>

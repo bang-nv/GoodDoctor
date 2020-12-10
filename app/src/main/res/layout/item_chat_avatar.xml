@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/size_10dp"
+    android:background="@color/color_white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivItemImage"
+        android:layout_width="@dimen/size_50dp"
+        android:layout_height="@dimen/size_50dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_marginStart="@dimen/size_8dp"
+        android:layout_marginEnd="@dimen/size_15dp"
+        android:paddingVertical="@dimen/size_2dp">
+
+        <TextView
+            android:id="@+id/tvItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color252525"
+            android:textSize="@dimen/text_size_14sp"
+            tools:text="Dr. Dang Thi Dung" />
+
+        <TextView
+            android:id="@+id/tvItemSpecialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color898989"
+            android:textSize="@dimen/text_size_14sp"
+            tools:text="Chuyên khoa sản" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+
+            <TextView
+                android:textColor="@color/color_white"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số dư ví"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.188" />
+
+            <TextView
+                android:textColor="@color/color_white"
+                android:id="@+id/tvMonneWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999đ"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.138" />
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btnRecharge"
+                android:layout_width="@dimen/size_120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_highlight_white"
+                android:text="Nạp tiền"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.235"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.67" />
+
+            <Button
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/btnWithdrawal"
+                android:layout_width="@dimen/size_120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_highlight_white"
+                android:text="Rút tiền"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnRecharge"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.67" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/size_16dp"
+            android:layout_marginVertical="@dimen/size_8dp"
+            android:text="Lịch sử giao dịch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvWallet"
+            tools:listitem="@layout/item_wallet"
+            android:layout_marginHorizontal="@dimen/size_16dp"
+            android:layout_marginVertical="@dimen/size_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</ScrollView>

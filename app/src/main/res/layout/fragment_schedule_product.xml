@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_12dp"
+        android:paddingBottom="@dimen/size_20dp">
+
+        <LinearLayout
+            android:id="@+id/llInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rcListProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_total_qty"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/colorCB0409"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_total_money_pro"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0đ"
+                    android:textColor="@color/colorCB0409"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:background="@color/color898989" />
+
+            <LinearLayout
+                android:id="@+id/rlPickDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtDateTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hôm nay, T4, 25.09.19"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/txtPickDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_32dp"
+                    android:layout_marginStart="@dimen/size_8dp"
+                    android:background="@drawable/bg_button_highlight"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/size_16dp"
+                    android:paddingVertical="@dimen/size_5dp"
+                    android:text="Chọn ngày"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rgAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:checked="true"
+                    android:text="@string/title_add_receive"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+
+                <TextView
+                    android:id="@+id/txtCurrentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:background="@drawable/bg_all_border_botton"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/title_not_detect_current_location"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingStart="@dimen/size_8dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp"
+                    tools:text="12 Lê Đức Thọ, Mễ Trì 12 Lê Đức Thọ, Mễ Trì 12 Lê Đức Thọ, Mễ Trì" />
+
+                <RadioButton
+                    android:id="@+id/rbGiaoHang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-6dp"
+                    android:layout_marginTop="@dimen/size_8dp"
+                    android:text="Giao Hàng"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/lnAddressPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:background="@drawable/bg_all_border_botton"
+                    android:hint="@string/title_input_address"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/size_8dp"
+                    android:textColorHint="@color/color858585"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/size_12dp"
+                    android:background="@drawable/bg_all_border_botton"
+                    android:hint="Nhập số điện thoại"
+                    android:inputType="numberSigned"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/size_8dp"
+                    android:textColorHint="@color/color858585"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:background="@color/color898989" />
+        </LinearLayout>  <!--end llInformation-->
+
+
+        <LinearLayout
+            android:id="@+id/llPaymentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12dp"
+                android:text="@string/title_payment_type"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgPaymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbPayAppWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:checked="true"
+                    android:text="@string/str_pay_app_wallet"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rbPayBankCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:checked="true"
+                    android:text="@string/str_pay_bank_card"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbPayElectronicWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:checked="true"
+                    android:text="@string/str_pay_electronic_wallet"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbPayCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:checked="true"
+                    android:text="@string/str_pay_cash"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_5dp"
+                    android:text="@string/str_total_money_app_wallet"
+                    android:textColor="@color/color5C5C5C"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tvMoneyAppWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0đ"
+                    android:textColor="@color/colorF25959"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout> <!--end llPaymentType-->
+
+
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_70dp"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:background="@drawable/bg_all_border_botton"
+            android:gravity="top"
+            android:hint="@string/str_specially_note"
+            android:inputType="numberSigned"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/size_8dp"
+            android:textColorHint="@color/color7E7E7E"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <Button
+            android:id="@+id/btnScheduledProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:background="@drawable/bg_button_highlight"
+            android:paddingHorizontal="@dimen/size_8dp"
+            android:text="@string/str_schedule"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

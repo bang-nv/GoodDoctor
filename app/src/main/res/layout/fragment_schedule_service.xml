@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_12dp"
+        android:paddingBottom="@dimen/size_20dp">
+
+        <LinearLayout
+            android:id="@+id/llInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivItemImage"
+                    android:layout_width="@dimen/size_90dp"
+                    android:layout_height="@dimen/size_70dp"
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="MissingConstraints"
+                    tools:src="@drawable/ic_logo_splash" />
+
+                <TextView
+                    android:id="@+id/tvItemServiceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:layout_marginEnd="@dimen/size_10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/color202020"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/imgDelete"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/ivItemImage"
+                    tools:ignore="MissingConstraints"
+                    tools:text="Đo huyết áp tại nhà, Đo huyết áp tại nhà" />
+
+                <TextView
+                    android:id="@+id/tvItemServicePriceSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:textColor="@color/colorCB0409"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintStart_toEndOf="@id/ivItemImage"
+                    app:layout_constraintStart_toStartOf="@id/tvItemServiceName"
+                    app:layout_constraintTop_toBottomOf="@id/tvItemServiceName"
+                    tools:ignore="MissingConstraints"
+                    tools:text="20.000.000đ" />
+
+                <TextView
+                    android:id="@+id/tvItemServicePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size_5dp"
+                    android:textColor="@color/color252525"
+                    android:textSize="@dimen/text_size_12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvItemServicePriceSale"
+                    app:layout_constraintStart_toEndOf="@id/tvItemServicePriceSale"
+                    app:layout_constraintTop_toTopOf="@id/tvItemServicePriceSale"
+                    tools:ignore="MissingConstraints"
+                    tools:text="22.000.000đ" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/color252525"
+                    app:layout_constraintBottom_toBottomOf="@id/tvItemServicePrice"
+                    app:layout_constraintEnd_toEndOf="@id/tvItemServicePrice"
+                    app:layout_constraintStart_toStartOf="@id/tvItemServicePrice"
+                    app:layout_constraintTop_toTopOf="@id/tvItemServicePrice" />
+
+                <ImageView
+                    android:id="@+id/imgDelete"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/size_5dp"
+                    android:src="@drawable/ic_delete"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_total_money_pro"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0đ"
+                    android:textColor="@color/colorCB0409"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewToClearFocus"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:background="@color/color898989" />
+
+            <LinearLayout
+                android:id="@+id/rlPickDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtDateTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hôm nay, T4, 25.09.19"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/txtPickDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_32dp"
+                    android:layout_marginStart="@dimen/size_8dp"
+                    android:background="@drawable/bg_button_highlight"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/size_16dp"
+                    android:paddingVertical="@dimen/size_5dp"
+                    android:text="Chọn ngày"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rgAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:checked="true"
+                    android:text="@string/title_at_shop"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <!--spinner các cơ sở shop-->
+                <LinearLayout
+                    android:id="@+id/llShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:background="@drawable/bg_all_border_botton">
+
+                    <Spinner
+                        android:id="@+id/spnShop"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/rbCustomAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-6dp"
+                    android:layout_marginTop="@dimen/size_8dp"
+                    android:text="@string/title_at_custom_address"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/llCustomAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:background="@drawable/bg_all_border_botton"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/title_input_phone"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/size_8dp"
+                    android:paddingEnd="@dimen/size_8dp"
+                    android:textColorHint="@color/color858585"
+                    android:textSize="@dimen/text_size_14sp"
+                    tools:ignore="TextFields" />
+
+                <!-- các spinner tỉnh, quận, huyện-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12dp"
+                    android:background="@drawable/bg_all_border_botton">
+
+                    <Spinner
+                        android:id="@+id/spnProvince"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12dp"
+                    android:background="@drawable/bg_all_border_botton">
+
+                    <Spinner
+                        android:id="@+id/spnDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12dp"
+                    android:background="@drawable/bg_all_border_botton">
+
+                    <Spinner
+                        android:id="@+id/spnVillage"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="@dimen/size_12dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/bg_all_border_botton"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/title_input_address"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/size_8dp"
+                    android:paddingEnd="@dimen/size_8dp"
+                    android:textColorHint="@color/color858585"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/size_6dp"
+                android:background="@color/color898989" />
+        </LinearLayout>  <!--end llInformation-->
+
+
+        <LinearLayout
+            android:id="@+id/llPaymentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12dp"
+                android:text="@string/title_payment_type"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgPaymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_3dp">
+
+                <RadioButton
+                    android:id="@+id/rbPayCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:checked="true"
+                    android:text="@string/str_pay_cash"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbPayAppWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:text="@string/str_pay_app_wallet"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbPayOnlineBankCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-6dp"
+                    android:text="@string/str_pay_online_bank_card"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_14sp" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/llMoneyAppWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_5dp"
+                    android:text="@string/str_total_money_app_wallet"
+                    android:textColor="@color/color5C5C5C"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tvMoneyAppWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0đ"
+                    android:textColor="@color/colorF25959"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout> <!--end llPaymentType-->
+
+
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_100dp"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:background="@drawable/bg_all_border_botton"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:hint="@string/str_specially_note"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="@dimen/size_8dp"
+            android:textColorHint="@color/color7E7E7E"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <Button
+            android:id="@+id/btnScheduledService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:background="@drawable/bg_button_highlight"
+            android:paddingHorizontal="@dimen/size_8dp"
+            android:text="@string/str_schedule_service"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
