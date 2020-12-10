@@ -1,3 +1,3 @@
 # GoodDoctor
 
-by bang-vn
+by bang-nv
