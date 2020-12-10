@@ -33,7 +33,7 @@
                 android:id="@+id/ivLogo"
                 android:layout_width="@dimen/size_106dp"
                 android:layout_height="@dimen/size_106dp"
-                android:src="@drawable/ic_logo"
+                android:src="@drawable/ic_logo_1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
